@@ -1,0 +1,68 @@
+name: Publicar la web
+
+on:
+  push:
+    branches: [main]
+  repository_dispatch:
+    types: [publicar]          # lo lanza la función «publicar» de Supabase al pulsar Publicar en la app
+  workflow_dispatch:
+  schedule:
+    - cron: "15 3 * * *"       # cada noche: la agenda pasa sola las citas ya celebradas
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generar la web
+        env:
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
+        run: |
+          if [ -n "$SUPABASE_URL" ] && [ "${{ github.event_name }}" != "push" ]; then
+            python3 build/generar.py --desde-supabase
+          else
+            python3 build/generar.py
+          fi
+          python3 build/comprobar.py
+
+      - name: Guardar la versión en el historial de git
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "Sequer · publicación"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datos/contenido.json version.json ./*.html
+          if git diff --cached --quiet; then echo "Sin cambios que guardar"; else
+            git commit -m "Publicación ${{ github.event.client_payload.version || 'programada' }}"
+            git push
+          fi
+
+      - name: Preparar los archivos públicos
+        run: |
+          mkdir _sitio
+          cp -R ./*.html version.json css js fuentes fotos datos gestion _sitio/
+          rm -rf _sitio/fotos/originales
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _sitio
+      - id: despliegue
+        uses: actions/deploy-pages@v4

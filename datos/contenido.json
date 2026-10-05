@@ -1,0 +1,1247 @@
+{
+ "version": 0,
+ "actualizado": null,
+ "ajustes": {
+  "nombre": "Sequer A Fuego Lento",
+  "apellido": "Lo Blanch",
+  "lema": "Restaurant · Arrosseria · Gastronomia d'horta",
+  "telefono": "610 110 117",
+  "whatsapp": null,
+  "email": null,
+  "direccion": "Camí Fondo, 23",
+  "codigo_postal": "46120",
+  "localidad": "Alboraia",
+  "provincia": "València",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Sequer+A+Fuego+Lento%2C+Cam%C3%AD+Fondo+23%2C+46120+Alboraia",
+  "instagram": "sequerloblanch",
+  "google_nota": 4.8,
+  "google_resenas": 259,
+  "horarios": [
+   {
+    "servicio": "almuerzos",
+    "nombre": "Almuerzos a la brasa",
+    "dias": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "desde": "09:00",
+    "hasta": "12:00"
+   },
+   {
+    "servicio": "comidas",
+    "nombre": "Comidas",
+    "dias": [
+     0,
+     1,
+     3,
+     4,
+     5,
+     6
+    ],
+    "desde": "13:00",
+    "hasta": "16:00"
+   }
+  ],
+  "parking": {
+   "texto": "Parking privado en el propio recinto, de fácil acceso.",
+   "plazas": null,
+   "gratuito": null,
+   "autocares": null
+  },
+  "aviso": {
+   "texto": null,
+   "hasta": null
+  }
+ },
+ "categorias": [
+  {
+   "id": "huerta",
+   "carta": "carta",
+   "nombre": "De la huerta",
+   "nota": null,
+   "pendiente": null,
+   "orden": 0,
+   "visible": true
+  },
+  {
+   "id": "mar",
+   "carta": "carta",
+   "nombre": "Del mar",
+   "nota": null,
+   "pendiente": null,
+   "orden": 1,
+   "visible": true
+  },
+  {
+   "id": "clasicos",
+   "carta": "carta",
+   "nombre": "Para compartir",
+   "nota": null,
+   "pendiente": null,
+   "orden": 2,
+   "visible": true
+  },
+  {
+   "id": "brasa",
+   "carta": "carta",
+   "nombre": "De la brasa",
+   "nota": null,
+   "pendiente": null,
+   "orden": 3,
+   "visible": true
+  },
+  {
+   "id": "arroces",
+   "carta": "carta",
+   "nombre": "Arroces a leña",
+   "nota": "Cocinados a fuego de leña, como manda la tradición.",
+   "pendiente": null,
+   "orden": 4,
+   "visible": true
+  },
+  {
+   "id": "postres",
+   "carta": "carta",
+   "nombre": "Postres",
+   "nota": null,
+   "pendiente": "Lista de postres con precios",
+   "orden": 5,
+   "visible": true
+  },
+  {
+   "id": "bocadillos",
+   "carta": "almuerzos",
+   "nombre": "Bocadillos a la brasa",
+   "nota": "Tú eliges: lo que pida el cuerpo.",
+   "pendiente": null,
+   "orden": 6,
+   "visible": true
+  },
+  {
+   "id": "ritual",
+   "carta": "almuerzos",
+   "nombre": "El ritual",
+   "nota": "Como manda la tradición del esmorzaret.",
+   "pendiente": null,
+   "orden": 7,
+   "visible": true
+  }
+ ],
+ "platos": [
+  {
+   "id": "tomate-ventresca",
+   "categoria_id": "huerta",
+   "nombre": "Ensalada de tomate valenciano con ventresca",
+   "descripcion": "Tomate valenciano de temporada, ventresca y el toque de nuestros encurtidos.",
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": "tomate-ventresca",
+   "disponible": true,
+   "visible": true,
+   "orden": 0
+  },
+  {
+   "id": "tomate-asado",
+   "categoria_id": "huerta",
+   "nombre": "Ensalada de tomate asado a la leña",
+   "descripcion": "Con encurtidos caseros.",
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": "tomate-asado-encurtidos",
+   "disponible": true,
+   "visible": true,
+   "orden": 1
+  },
+  {
+   "id": "ensalada-valenciana",
+   "categoria_id": "huerta",
+   "nombre": "Ensalada valenciana",
+   "descripcion": "Con productos frescos de la huerta.",
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": "ensalada-valenciana",
+   "disponible": true,
+   "visible": true,
+   "orden": 2
+  },
+  {
+   "id": "titaina",
+   "categoria_id": "huerta",
+   "nombre": "Titaina a la brasa",
+   "descripcion": "Pimientos, tomate y atún asados lentamente sobre leña de naranjo.",
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": "titaina-brasa",
+   "disponible": true,
+   "visible": true,
+   "orden": 3
+  },
+  {
+   "id": "esgarraet",
+   "categoria_id": "huerta",
+   "nombre": "Esgarraet",
+   "descripcion": "Pimiento rojo asado y bacalao desmigado con aceite de oliva virgen extra.",
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": null,
+   "disponible": true,
+   "visible": true,
+   "orden": 4
+  },
+  {
+   "id": "hummus",
+   "categoria_id": "huerta",
+   "nombre": "Hummus de garrofón y chufa",
+   "descripcion": "Dos productos de la huerta valenciana: la chufa y el garrofón.",
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": "hummus-garrofon-chufa",
+   "disponible": true,
+   "visible": true,
+   "orden": 5
+  },
+  {
+   "id": "clotxines",
+   "categoria_id": "mar",
+   "nombre": "Clòtxines",
+   "descripcion": "En temporada.",
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": "clotxines",
+   "disponible": true,
+   "visible": true,
+   "orden": 0
+  },
+  {
+   "id": "tellinas",
+   "categoria_id": "mar",
+   "nombre": "Tellinas al vapor",
+   "descripcion": null,
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": "tellinas",
+   "disponible": true,
+   "visible": true,
+   "orden": 1
+  },
+  {
+   "id": "sepia",
+   "categoria_id": "mar",
+   "nombre": "Sepia bruta a la brasa",
+   "descripcion": "Con salsa mery.",
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": "sepia-brasa",
+   "disponible": true,
+   "visible": true,
+   "orden": 2
+  },
+  {
+   "id": "pulpo",
+   "categoria_id": "mar",
+   "nombre": "Pulpo a la brasa",
+   "descripcion": "Sobre parmentier.",
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": "pulpo-brasa-parmentier",
+   "disponible": true,
+   "visible": true,
+   "orden": 3
+  },
+  {
+   "id": "gambas",
+   "categoria_id": "mar",
+   "nombre": "Gambas al ajillo",
+   "descripcion": null,
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": "gambas-ajillo",
+   "disponible": true,
+   "visible": true,
+   "orden": 4
+  },
+  {
+   "id": "bunuelo",
+   "categoria_id": "mar",
+   "nombre": "Buñuelo de bacalao en tempura de tinta",
+   "descripcion": "Sobre salsa de pimientos.",
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": "bunuelo-bacalao-tinta",
+   "disponible": true,
+   "visible": true,
+   "orden": 5
+  },
+  {
+   "id": "croquetas",
+   "categoria_id": "clasicos",
+   "nombre": "Croquetas de puchero",
+   "descripcion": "Como las de antes.",
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": "croquetas-puchero",
+   "disponible": true,
+   "visible": true,
+   "orden": 0
+  },
+  {
+   "id": "entrecot",
+   "categoria_id": "brasa",
+   "nombre": "Entrecot a la brasa",
+   "descripcion": null,
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": null,
+   "disponible": true,
+   "visible": true,
+   "orden": 0
+  },
+  {
+   "id": "solomillo",
+   "categoria_id": "brasa",
+   "nombre": "Solomillo a la brasa",
+   "descripcion": null,
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": null,
+   "disponible": true,
+   "visible": true,
+   "orden": 1
+  },
+  {
+   "id": "paella-valenciana",
+   "categoria_id": "arroces",
+   "nombre": "Paella valenciana",
+   "descripcion": null,
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": "paella-valenciana",
+   "disponible": true,
+   "visible": true,
+   "orden": 0
+  },
+  {
+   "id": "arroz-bogavante",
+   "categoria_id": "arroces",
+   "nombre": "Arroz con bogavante",
+   "descripcion": null,
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": null,
+   "disponible": true,
+   "visible": true,
+   "orden": 1
+  },
+  {
+   "id": "arroz-marisco",
+   "categoria_id": "arroces",
+   "nombre": "Arroz de marisco",
+   "descripcion": null,
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": null,
+   "disponible": true,
+   "visible": true,
+   "orden": 2
+  },
+  {
+   "id": "arroz-negro",
+   "categoria_id": "arroces",
+   "nombre": "Arroz negro",
+   "descripcion": null,
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": null,
+   "disponible": true,
+   "visible": true,
+   "orden": 3
+  },
+  {
+   "id": "fideua",
+   "categoria_id": "arroces",
+   "nombre": "Fideuà",
+   "descripcion": null,
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": null,
+   "disponible": true,
+   "visible": true,
+   "orden": 4
+  },
+  {
+   "id": "chivito",
+   "categoria_id": "bocadillos",
+   "nombre": "Chivito con huevo frito",
+   "descripcion": null,
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": "almuerzo-chivito",
+   "disponible": true,
+   "visible": true,
+   "orden": 0
+  },
+  {
+   "id": "caballo",
+   "categoria_id": "bocadillos",
+   "nombre": "Carne de caballo con ajetes",
+   "descripcion": null,
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": "almuerzo-caballo-ajetes",
+   "disponible": true,
+   "visible": true,
+   "orden": 1
+  },
+  {
+   "id": "longaniza",
+   "categoria_id": "bocadillos",
+   "nombre": "Longaniza",
+   "descripcion": null,
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": null,
+   "disponible": true,
+   "visible": true,
+   "orden": 2
+  },
+  {
+   "id": "panceta",
+   "categoria_id": "bocadillos",
+   "nombre": "Panceta",
+   "descripcion": null,
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": null,
+   "disponible": true,
+   "visible": true,
+   "orden": 3
+  },
+  {
+   "id": "lomo",
+   "categoria_id": "bocadillos",
+   "nombre": "Lomo",
+   "descripcion": null,
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": null,
+   "disponible": true,
+   "visible": true,
+   "orden": 4
+  },
+  {
+   "id": "gasto",
+   "categoria_id": "ritual",
+   "nombre": "El gasto",
+   "descripcion": "Cacaos y olivas sobre la mesa.",
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": null,
+   "disponible": true,
+   "visible": true,
+   "orden": 0
+  },
+  {
+   "id": "vino-casera",
+   "categoria_id": "ritual",
+   "nombre": "Vino con casera",
+   "descripcion": null,
+   "precio": null,
+   "precio_texto": null,
+   "por_persona": false,
+   "alergenos": [],
+   "etiquetas": [],
+   "foto_id": null,
+   "disponible": true,
+   "visible": true,
+   "orden": 1
+  }
+ ],
+ "menus": [
+  {
+   "id": "mediodia-arroces",
+   "tipo": "mediodia",
+   "nombre": "Menús de arroces al mediodía",
+   "descripcion": "Nuestros arroces a leña, al mediodía.",
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [],
+   "incluye": null,
+   "notas": null,
+   "pendiente": "Platos, precio por persona y mínimo de comensales",
+   "visible": true,
+   "orden": 0
+  },
+  {
+   "id": "mar-y-huerta",
+   "tipo": "mediodia",
+   "nombre": "Menú mar y huerta",
+   "descripcion": null,
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [
+    {
+     "titulo": "Entre sus platos",
+     "platos": [
+      "Calamar encebollado"
+     ]
+    }
+   ],
+   "incluye": null,
+   "notas": null,
+   "pendiente": "Platos, precio por persona y mínimo de comensales",
+   "visible": true,
+   "orden": 1
+  },
+  {
+   "id": "boda",
+   "tipo": "boda",
+   "nombre": "Bodas",
+   "descripcion": "En plena huerta, con la terraza bajo los árboles y el salón con vistas a las plantaciones. Cada celebración es diferente: siempre podemos adaptarnos a lo que necesitéis.",
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [],
+   "incluye": null,
+   "notas": null,
+   "pendiente": "Platos, precio por persona y mínimo de comensales",
+   "visible": true,
+   "orden": 2
+  },
+  {
+   "id": "comunion",
+   "tipo": "comunion",
+   "nombre": "Comuniones y celebraciones familiares",
+   "descripcion": "Comuniones, bautizos y aniversarios con arroces a leña. Cada celebración es diferente: siempre podemos adaptarnos a lo que necesitéis.",
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [],
+   "incluye": null,
+   "notas": null,
+   "pendiente": "Platos, precio por persona y mínimo de comensales",
+   "visible": true,
+   "orden": 3
+  },
+  {
+   "id": "grupos",
+   "tipo": "grupo",
+   "nombre": "Grupos y empresa",
+   "descripcion": "Propuestas de menús preparadas para grupos y comidas de empresa. Cada celebración es diferente: siempre podemos adaptarnos a lo que necesitéis.",
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [],
+   "incluye": null,
+   "notas": null,
+   "pendiente": "Platos, precio por persona y mínimo de comensales",
+   "visible": true,
+   "orden": 4
+  },
+  {
+   "id": "coctel",
+   "tipo": "coctel",
+   "nombre": "Cóctel de pie",
+   "descripcion": "Cada celebración es diferente: siempre podemos adaptarnos a lo que necesitéis.",
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [],
+   "incluye": null,
+   "notas": null,
+   "pendiente": "Carta de cóctel de pie: piezas, estaciones y precio",
+   "visible": true,
+   "orden": 5
+  }
+ ],
+ "fotos": [
+  {
+   "id": "paella-fuego-lena",
+   "src": "fotos/paella-fuego-lena",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Paella valenciana al fuego de leña, con las llamas bajo el paellero",
+   "categoria": "arroces",
+   "foco": "50% 62%",
+   "orden": 0,
+   "en_galeria": true,
+   "uso": "Portada (el arco)"
+  },
+  {
+   "id": "paella-bajo-los-arboles",
+   "src": "fotos/paella-bajo-los-arboles",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Paella valenciana en una mesa de la terraza, a la sombra de los árboles",
+   "categoria": "espacio",
+   "foco": "50% 50%",
+   "orden": 1,
+   "en_galeria": true,
+   "uso": "Inicio, terraza y galería"
+  },
+  {
+   "id": "paella-horno-lena",
+   "src": "fotos/paella-horno-lena",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Paella valenciana recién hecha delante del horno de leña",
+   "categoria": "arroces",
+   "foco": "50% 50%",
+   "orden": 2,
+   "en_galeria": true,
+   "uso": "Inicio: puerta «Arroces» y «Un día»"
+  },
+  {
+   "id": "paella-valenciana",
+   "src": "fotos/paella-valenciana",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Paella valenciana de pollo y conejo hecha a leña",
+   "categoria": "arroces",
+   "foco": "50% 50%",
+   "orden": 3,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "paella-terraza",
+   "src": "fotos/paella-terraza",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Paella sobre la mesa en la terraza, con palmeras y huerta al fondo",
+   "categoria": "espacio",
+   "foco": "50% 50%",
+   "orden": 4,
+   "en_galeria": true,
+   "uso": "Cabecera de la Agenda"
+  },
+  {
+   "id": "arroz-un-dia-en-el-sequer",
+   "src": "fotos/arroz-un-dia-en-el-sequer",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Arroz con gambas en su paella, servido en la mesa",
+   "categoria": "arroces",
+   "foco": "50% 50%",
+   "orden": 5,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "tomate-asado-encurtidos",
+   "src": "fotos/tomate-asado-encurtidos",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Ensalada de tomate asado a la leña con encurtidos caseros",
+   "categoria": "carta",
+   "foco": "50% 50%",
+   "orden": 6,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "tomate-ventresca",
+   "src": "fotos/tomate-ventresca",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Tomate valenciano de temporada con ventresca y encurtidos",
+   "categoria": "carta",
+   "foco": "50% 50%",
+   "orden": 7,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "ensalada-tomate-valenciano",
+   "src": "fotos/ensalada-tomate-valenciano",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Ensalada de tomate valenciano con encurtidos",
+   "categoria": "carta",
+   "foco": "50% 50%",
+   "orden": 8,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "ensalada-valenciana",
+   "src": "fotos/ensalada-valenciana",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Ensalada valenciana con productos de la huerta",
+   "categoria": "carta",
+   "foco": "50% 50%",
+   "orden": 9,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "titaina-brasa",
+   "src": "fotos/titaina-brasa",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Titaina a la brasa con pimientos, tomate y atún",
+   "categoria": "carta",
+   "foco": "50% 50%",
+   "orden": 10,
+   "en_galeria": true,
+   "uso": "Cabecera de la Carta"
+  },
+  {
+   "id": "titaina-brasa-2",
+   "src": "fotos/titaina-brasa-2",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Titaina a la brasa servida en la mesa",
+   "categoria": "carta",
+   "foco": "50% 50%",
+   "orden": 11,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "hummus-garrofon-chufa",
+   "src": "fotos/hummus-garrofon-chufa",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Hummus de garrofón y chufa en cuenco",
+   "categoria": "carta",
+   "foco": "50% 50%",
+   "orden": 12,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "calamar-encebollado",
+   "src": "fotos/calamar-encebollado",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Calamar encebollado del menú mar y huerta",
+   "categoria": "carta",
+   "foco": "50% 50%",
+   "orden": 13,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "crujientes-alioli",
+   "src": "fotos/crujientes-alioli",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Plato crujiente con alioli",
+   "categoria": "carta",
+   "foco": "50% 50%",
+   "orden": 14,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "tellinas",
+   "src": "fotos/tellinas",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Tellinas al vapor",
+   "categoria": "carta",
+   "foco": "50% 50%",
+   "orden": 15,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "clotxines",
+   "src": "fotos/clotxines",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Clòtxines en la terraza, bajo los árboles",
+   "categoria": "carta",
+   "foco": "50% 50%",
+   "orden": 16,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "croquetas-puchero",
+   "src": "fotos/croquetas-puchero",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Croquetas de puchero",
+   "categoria": "carta",
+   "foco": "50% 50%",
+   "orden": 17,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "gambas-ajillo",
+   "src": "fotos/gambas-ajillo",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Gambas al ajillo",
+   "categoria": "carta",
+   "foco": "50% 50%",
+   "orden": 18,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "pulpo-brasa-parmentier",
+   "src": "fotos/pulpo-brasa-parmentier",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Pulpo a la brasa sobre parmentier",
+   "categoria": "carta",
+   "foco": "50% 50%",
+   "orden": 19,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "sepia-brasa",
+   "src": "fotos/sepia-brasa",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Sepia bruta a la brasa con salsa mery",
+   "categoria": "carta",
+   "foco": "50% 50%",
+   "orden": 20,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "bunuelo-bacalao-tinta",
+   "src": "fotos/bunuelo-bacalao-tinta",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Buñuelo de bacalao en tempura de tinta sobre salsa de pimientos",
+   "categoria": "carta",
+   "foco": "50% 50%",
+   "orden": 21,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "postre",
+   "src": "fotos/postre",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Postre de la casa con helado",
+   "categoria": "carta",
+   "foco": "50% 50%",
+   "orden": 22,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "almuerzo-chivito",
+   "src": "fotos/almuerzo-chivito",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Almuerzo: chivito con huevo frito, olivas y cacaos, con su bebida",
+   "categoria": "almuerzos",
+   "foco": "50% 50%",
+   "orden": 23,
+   "en_galeria": true,
+   "uso": "Inicio: puerta «Almuerzos» y ritual"
+  },
+  {
+   "id": "almuerzo-caballo-ajetes",
+   "src": "fotos/almuerzo-caballo-ajetes",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Bocadillo de carne de caballo con ajetes y vino con casera",
+   "categoria": "almuerzos",
+   "foco": "50% 50%",
+   "orden": 24,
+   "en_galeria": true,
+   "uso": "Portada (foto pequeña) y Almuerzos"
+  },
+  {
+   "id": "brasa-almuerzos",
+   "src": "fotos/brasa-almuerzos",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "La parrilla de los almuerzos con las brasas encendidas, junto a la huerta",
+   "categoria": "almuerzos",
+   "foco": "50% 50%",
+   "orden": 25,
+   "en_galeria": true,
+   "uso": "«Un día» y cabecera de Almuerzos"
+  },
+  {
+   "id": "jarra-cerveza-terraza",
+   "src": "fotos/jarra-cerveza-terraza",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Jarra de cerveza en la terraza, con la huerta al fondo",
+   "categoria": "espacio",
+   "foco": "50% 50%",
+   "orden": 26,
+   "en_galeria": true,
+   "uso": "«Un día» y espacios"
+  },
+  {
+   "id": "sangria-salon",
+   "src": "fotos/sangria-salon",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Jarra de sangría en el salón",
+   "categoria": "espacio",
+   "foco": "50% 50%",
+   "orden": 27,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "salon",
+   "src": "fotos/salon",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "El salón, con mesas montadas y ventanales a la huerta",
+   "categoria": "espacio",
+   "foco": "50% 50%",
+   "orden": 28,
+   "en_galeria": true,
+   "uso": "Inicio: puerta «Celebrar», «Un día» y Celebraciones"
+  },
+  {
+   "id": "cartel-fachada",
+   "src": "fotos/cartel-fachada",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Cartel de la fachada: Sequer Lo Blanch, restaurant, arrosseria, gastronomia d'horta",
+   "categoria": "espacio",
+   "foco": "50% 50%",
+   "orden": 29,
+   "en_galeria": false,
+   "uso": "Cabecera de Visítanos"
+  },
+  {
+   "id": "inauguracion",
+   "src": "fotos/inauguracion",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "El equipo el día de la inauguración del nuevo espacio",
+   "categoria": "eventos",
+   "foco": "50% 50%",
+   "orden": 30,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "cartel-market-talleres",
+   "src": "fotos/cartel-market-talleres",
+   "anchos": [
+    720
+   ],
+   "alt": "Cartel del market y talleres",
+   "categoria": "agenda",
+   "foco": "50% 50%",
+   "orden": 31,
+   "en_galeria": false,
+   "uso": null
+  },
+  {
+   "id": "cartel-market-26-abril",
+   "src": "fotos/cartel-market-26-abril",
+   "anchos": [
+    720
+   ],
+   "alt": "Cartel del market a l'horta de artesanía y vintage",
+   "categoria": "agenda",
+   "foco": "50% 50%",
+   "orden": 32,
+   "en_galeria": false,
+   "uso": null
+  },
+  {
+   "id": "cartel-taller-pintura",
+   "src": "fotos/cartel-taller-pintura",
+   "anchos": [
+    720
+   ],
+   "alt": "Cartel del taller de pintura con esmorzaret",
+   "categoria": "agenda",
+   "foco": "50% 50%",
+   "orden": 33,
+   "en_galeria": false,
+   "uso": null
+  },
+  {
+   "id": "cartel-feria-gastronomica",
+   "src": "fotos/cartel-feria-gastronomica",
+   "anchos": [
+    720
+   ],
+   "alt": "Cartel de la feria gastronómica y de artesanía",
+   "categoria": "agenda",
+   "foco": "50% 50%",
+   "orden": 34,
+   "en_galeria": false,
+   "uso": null
+  },
+  {
+   "id": "cartel-market-10-mayo",
+   "src": "fotos/cartel-market-10-mayo",
+   "anchos": [
+    720
+   ],
+   "alt": "Cartel del market a l'horta de artesanía local",
+   "categoria": "agenda",
+   "foco": "50% 50%",
+   "orden": 35,
+   "en_galeria": false,
+   "uso": null
+  },
+  {
+   "id": "cartel-risoterapia",
+   "src": "fotos/cartel-risoterapia",
+   "anchos": [
+    720
+   ],
+   "alt": "Cartel del taller de risoterapia con esmorzaret",
+   "categoria": "agenda",
+   "foco": "50% 50%",
+   "orden": 36,
+   "en_galeria": false,
+   "uso": null
+  },
+  {
+   "id": "cartel-market-30-mayo",
+   "src": "fotos/cartel-market-30-mayo",
+   "anchos": [
+    720
+   ],
+   "alt": "Cartel del market a l'horta de artesanía local",
+   "categoria": "agenda",
+   "foco": "50% 50%",
+   "orden": 37,
+   "en_galeria": false,
+   "uso": null
+  }
+ ],
+ "agenda": [
+  {
+   "id": "market-marzo",
+   "titulo": "Market de artesanía y vintage",
+   "fecha": "2026-03-22",
+   "hora_inicio": null,
+   "hora_fin": null,
+   "descripcion": "Piezas únicas, detalles especiales y mucho encanto en plena huerta.",
+   "foto_id": "cartel-market-talleres",
+   "acceso": "libre",
+   "precio_texto": null,
+   "visible": true
+  },
+  {
+   "id": "taller-pintura",
+   "titulo": "Taller de pintura + esmorzaret",
+   "fecha": "2026-04-25",
+   "hora_inicio": "10:30",
+   "hora_fin": "13:00",
+   "descripcion": "Pinta tu cuadro en la huerta y después, bocadillo y bebida.",
+   "foto_id": "cartel-taller-pintura",
+   "acceso": "reserva",
+   "precio_texto": "29 €",
+   "visible": true
+  },
+  {
+   "id": "market-abril",
+   "titulo": "Market a l'horta: artesanía y vintage",
+   "fecha": "2026-04-26",
+   "hora_inicio": "11:00",
+   "hora_fin": "15:30",
+   "descripcion": "Mercado de artesanía y vintage para toda la familia.",
+   "foto_id": "cartel-market-26-abril",
+   "acceso": "libre",
+   "precio_texto": null,
+   "visible": true
+  },
+  {
+   "id": "market-mayo",
+   "titulo": "Market a l'horta: artesanía local",
+   "fecha": "2026-05-10",
+   "hora_inicio": "11:30",
+   "hora_fin": "15:30",
+   "descripcion": "Piezas únicas y talento de aquí.",
+   "foto_id": "cartel-market-10-mayo",
+   "acceso": "libre",
+   "precio_texto": null,
+   "visible": true
+  },
+  {
+   "id": "feria",
+   "titulo": "Feria gastronómica y de artesanía",
+   "fecha": "2026-05-15",
+   "hora_inicio": "17:30",
+   "hora_fin": "21:30",
+   "descripcion": "Tapas y bebidas a elegir, artesanía y buen ambiente.",
+   "foto_id": "cartel-feria-gastronomica",
+   "acceso": "entrada",
+   "precio_texto": "12 € con 3 consumiciones",
+   "visible": true
+  },
+  {
+   "id": "risoterapia",
+   "titulo": "Risoterapia + esmorzaret",
+   "fecha": "2026-05-30",
+   "hora_inicio": "11:00",
+   "hora_fin": "13:00",
+   "descripcion": "Taller de risoterapia y, después, almuerzo típico valenciano.",
+   "foto_id": "cartel-risoterapia",
+   "acceso": "reserva",
+   "precio_texto": "20 € todo incluido",
+   "visible": true
+  },
+  {
+   "id": "market-30-mayo",
+   "titulo": "Market a l'horta: artesanía local",
+   "fecha": "2026-05-30",
+   "hora_inicio": "11:30",
+   "hora_fin": "15:30",
+   "descripcion": "Artesanía hecha con cariño por creadores de la zona.",
+   "foto_id": "cartel-market-30-mayo",
+   "acceso": "libre",
+   "precio_texto": null,
+   "visible": true
+  }
+ ]
+}
