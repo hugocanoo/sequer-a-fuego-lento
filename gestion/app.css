@@ -1,13 +1,13 @@
 /* App de gestión — misma familia visual que la web (cal, hiedra, carbón, brasa), pensada para el pulgar:
    letra de 17 px, objetivos táctiles de 48 px como mínimo y todo a una mano. */
 @font-face { font-family: "Young Serif"; src: url("../fuentes/young-serif-normal.woff2") format("woff2"); font-display: swap; }
-@font-face { font-family: "Instrument Sans"; src: url("../fuentes/instrument-sans-normal.woff2") format("woff2"); font-weight: 400 700; font-display: swap; }
+@font-face { font-family: "Schibsted Grotesk"; src: url("../fuentes/schibsted-grotesk-normal.woff2") format("woff2"); font-weight: 400 700; font-display: swap; }
 
 :root {
   --fondo: #eff0ea; --superficie: #ffffff; --superficie-2: #e4e7dd; --texto: #1f201c; --texto-2: #565950;
   --linea: rgba(31, 32, 28, .12); --principal: #1d3225; --sobre-principal: #f2f3ee; --brasa: #e2692e; --brasa-texto: #a8441a;
   --peligro: #b3261e; --ok: #2c6b45; --sombra: 0 10px 30px -12px rgba(20, 30, 22, .35);
-  --serif: "Young Serif", Georgia, serif; --sans: "Instrument Sans", -apple-system, "Segoe UI", Roboto, sans-serif;
+  --serif: "Young Serif", Georgia, serif; --sans: "Schibsted Grotesk", -apple-system, "Segoe UI", Roboto, sans-serif;
   --r: 14px; --abajo: env(safe-area-inset-bottom, 0px);
   color-scheme: light;
 }
@@ -120,7 +120,7 @@ h1, h2 { margin: 0; font-weight: 400; }
 .interruptor__texto { display: grid; gap: 2px; font-weight: 600; }
 .interruptor__texto small { font-weight: 400; color: var(--texto-2); font-size: 14px; }
 .interruptor__pista { flex: none; width: 52px; height: 32px; border-radius: 999px; background: var(--superficie-2); position: relative; transition: background-color .25s; box-shadow: inset 0 0 0 1px var(--linea); }
-.interruptor__pista span { position: absolute; top: 3px; left: 3px; width: 26px; height: 26px; border-radius: 50%; background: #fff; box-shadow: 0 2px 6px rgba(0, 0, 0, .25); transition: transform .3s cubic-bezier(.3, .8, .3, 1.2); }
+.interruptor__pista span { position: absolute; top: 3px; left: 3px; width: 26px; height: 26px; border-radius: 50%; background: #fff; box-shadow: 0 2px 6px rgba(0, 0, 0, .25); transition: transform .3s cubic-bezier(.2, .8, .2, 1); }
 .interruptor[aria-checked="true"] .interruptor__pista { background: var(--ok); }
 .interruptor[aria-checked="true"] .interruptor__pista span { transform: translateX(20px); }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0; }
