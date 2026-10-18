@@ -89,8 +89,8 @@ class Web:
                 f'sizes="{sizes}" alt="{e(alt if alt is not None else f["alt"])}" {carga} decoding="async" '
                 f'style="object-position:{e(f.get("foco", "50% 50%"))}" {extra}>')
 
-    def tel_href(self):
-        return "tel:+34" + self.a["telefono"].replace(" ", "")
+    def tel_href(self, numero=None):
+        return "tel:+34" + (numero or self.a["telefono"]).replace(" ", "")
 
     def wa_href(self, texto=""):
         if not self.a.get("whatsapp"):
@@ -550,7 +550,7 @@ class Web:
         else:
             formulario = f"""<div class="presupuesto presupuesto--llamar">
   <p>Llámanos y te preparamos la propuesta. Ten a mano la fecha, cuántos seréis y qué celebráis.</p>
-  <a class="boton boton--brasa" href="{self.tel_href()}">Llamar al {e(a["telefono"])}</a>
+  <a class="boton boton--brasa" href="{self.tel_href(a.get("telefono_eventos"))}">Llamar al {e(a.get("telefono_eventos") or a["telefono"])}</a>
 </div>"""
         cuerpo = self.cabecera_pagina(
             "Celebraciones", "Celebrar en plena&nbsp;huerta",
@@ -690,6 +690,7 @@ class Web:
   <div class="visita__bloque" data-revelar style="--i:2">
     {self.antetitulo("Contacto")}
     <p class="visita__tel"><a href="{self.tel_href()}">{e(a["telefono"])}</a></p>
+    {f'<p>Eventos y celebraciones: <a href="{self.tel_href(a["telefono_eventos"])}">{e(a["telefono_eventos"])}</a></p>' if a.get("telefono_eventos") else ""}
     {f'<p><a href="mailto:{e(a["email"])}">{e(a["email"])}</a></p>' if a.get("email") else ""}
     <p><a href="https://www.instagram.com/{e(a["instagram"])}/" target="_blank" rel="noopener">@{e(a["instagram"])}</a></p>
     <p>{self.direccion()}</p>
