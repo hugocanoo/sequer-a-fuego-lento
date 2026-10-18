@@ -102,7 +102,7 @@ class Web:
         if p.get("precio_texto"):
             return f'<span class="precio">{e(p["precio_texto"])}</span>'
         if p.get("precio") is None:
-            return '<span class="precio precio--pendiente" title="Precio pendiente">precio</span>'
+            return ""  # el restaurante no quiere precios en la web: sin precio no se pinta ni el hueco
         v = float(p["precio"])
         t = f"{v:.2f}".replace(".", ",").replace(",00", "")
         pp = ' <small>/pers.</small>' if p.get("por_persona") else ""
@@ -405,7 +405,7 @@ class Web:
             filas.append(
                 f'<li class="plato"{datos_foto}>{mini}<div class="plato__cuerpo">'
                 f'<p class="plato__linea"><span class="plato__nombre">{e(p["nombre"])}</span>'
-                f'<span class="plato__puntos" aria-hidden="true"></span>{self.precio(p)}</p>'
+                + ('<span class="plato__puntos" aria-hidden="true"></span>' + self.precio(p) if self.precio(p) else '') + '</p>'
                 + (f'<p class="plato__desc">{e(p["descripcion"])}</p>' if p.get("descripcion") else "")
                 + (f'<p class="plato__etiquetas">{etq}</p>' if etq else "") + al_html + '</div></li>')
         cuerpo = f'<ul class="platos">{"".join(filas)}</ul>' if filas else ""
@@ -454,7 +454,7 @@ class Web:
 
     def tarjeta_menu(self, m):
         tiempos = "".join(
-            f'<div class="menu__tiempo"><h4>{e(t["titulo"])}</h4><ul>{"".join(f"<li>{e(x)}</li>" for x in t["platos"])}</ul></div>'
+            f'<div class="menu__tiempo{" menu__tiempo--cols" if len(t["platos"]) > 8 else ""}"><h4>{e(t["titulo"])}</h4><ul>{"".join(f"<li>{e(x)}</li>" for x in t["platos"])}</ul></div>'
             for t in m.get("tiempos") or [])
         precio = ""
         if m.get("precio_persona") is not None:
@@ -499,7 +499,7 @@ class Web:
   <ol class="pasos">{pasos_html}</ol>
 </section>
 <section class="carta carta--almuerzos envoltura"><div class="carta__lista">{listas}
-  {self.pendiente("Precios de los almuerzos y si hay almuerzos los martes (al mediodía cerráis)")}</div>
+  {self.pendiente("Si hay almuerzos los martes (al mediodía cerráis)")}</div>
 </section>"""
         return self.pagina("almuerzos", f'Almuerzos a la brasa — {a["nombre"]}',
                            "Almuerzos a la brasa de lunes a sábado de 9 a 12 en la huerta de Alboraia: chivito, longaniza, panceta, lomo y caballo con ajetes.",
@@ -525,6 +525,17 @@ class Web:
         esp_html = "".join(
             f'<li class="espacio" data-revelar style="--i:{i}" data-tilt><figure>{self.foto(f, sizes="(min-width: 900px) 30vw, 90vw")}</figure>'
             f'<h3>{t}</h3><p>{x}</p></li>' for i, (f, t, x) in enumerate(espacios))
+        montajes = [
+            ("cartel-cocktail", "El cóctel", "Cartel a cartel, cada momento de la fiesta tiene su sitio."),
+            ("carro-vermut", "El vermut", "Un carro de vermut a la sombra, para empezar con buen pie."),
+            ("cartel-bailoteo", "El bailoteo", "Y cuando se acaba la mesa, a bailar bajo los árboles."),
+            ("banquete-mesas-sillas", "El banquete", "Mesas largas con mantel blanco y sillas de cuerda."),
+            ("mesa-numero-4", "Los detalles", "Flores, números de mesa y un recuerdo en cada plato."),
+            ("mesa-para-dos", "Mesas para todos", "Desde la mesa larga hasta la mesa para dos."),
+        ]
+        montajes_html = "".join(
+            f'<li class="espacio" data-revelar style="--i:{i}" data-tilt><figure>{self.foto(f, sizes="(min-width: 900px) 30vw, 90vw")}</figure>'
+            f'<h3>{t}</h3><p>{x}</p></li>' for i, (f, t, x) in enumerate(montajes))
         wa = self.wa_href()
         destino = wa or (f'mailto:{a["email"]}' if a.get("email") else None)
         if destino:
@@ -544,12 +555,17 @@ class Web:
         cuerpo = self.cabecera_pagina(
             "Celebraciones", "Celebrar en plena&nbsp;huerta",
             "Bodas, comuniones, aniversarios, comidas de empresa y todo tipo de eventos privados, con nuestros arroces a leña.",
-            "salon") + f"""
+            "mesa-larga-vertical") + f"""
 <section class="espacios envoltura">
   {self.antetitulo("Los espacios")}
   <h2 class="titulo-seccion">Terraza, salón y huerta</h2>
   <ul class="espacios__lista">{esp_html}</ul>
-  {self.pendiente("Aforo de la terraza y del salón, y fotos de un montaje de boda o comunión")}
+  {self.pendiente("Aforo de la terraza y del salón")}
+</section>
+<section class="espacios envoltura">
+  {self.antetitulo("Así se vive")}
+  <h2 class="titulo-seccion">Una celebración bajo los árboles</h2>
+  <ul class="espacios__lista">{montajes_html}</ul>
 </section>
 <section class="menus-eventos envoltura">
   {self.antetitulo("Los menús")}

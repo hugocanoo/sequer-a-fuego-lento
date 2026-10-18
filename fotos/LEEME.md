@@ -16,13 +16,13 @@ suben desde la app de gestión, en «Fotos») y se colocan.
    de ordenador.
 4. **Fachada y entrada actuales** (con el cartel nuevo, si lo hay).
 5. **Salón por dentro**, vacío y montado.
-6. **Un montaje de boda o comunión** y **un cóctel de pie** (aunque sean de móvil).
+6. ~~Montaje de boda~~ (recibido 2026-10-18). Siguen faltando **comunión** y un **cóctel de pie** con gente.
 7. **El equipo / Pierpaolo** en cocina o con el fuego.
 8. **Postres**.
 
 ## Datos (sin esto la web enseña huecos rotulados «Pendiente»)
 
-1. **Carta con precios** — capturas de todas las diapositivas del carrusel «CARTA» de su
+1. **Carta** (los precios NO se publican en la web) — capturas de todas las diapositivas del carrusel «CARTA» de su
    Instagram (solo se guardó la portada), o la carta en PDF/foto.
 2. **Menús con precios** — las diapositivas del carrusel «MENÚS»: grupos, mediodía
    (arroces, «mar y huerta»).

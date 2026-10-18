@@ -108,7 +108,7 @@
    "carta": "carta",
    "nombre": "Postres",
    "nota": null,
-   "pendiente": "Lista de postres con precios",
+   "pendiente": "Lista de postres",
    "orden": 5,
    "visible": true
   },
@@ -549,7 +549,7 @@
    "tiempos": [],
    "incluye": null,
    "notas": null,
-   "pendiente": "Platos, precio por persona y mínimo de comensales",
+   "pendiente": "Platos y mínimo de comensales",
    "visible": true,
    "orden": 0
   },
@@ -570,23 +570,211 @@
    ],
    "incluye": null,
    "notas": null,
-   "pendiente": "Platos, precio por persona y mínimo de comensales",
+   "pendiente": "Platos y mínimo de comensales",
    "visible": true,
    "orden": 1
   },
   {
    "id": "boda",
    "tipo": "boda",
-   "nombre": "Bodas",
+   "nombre": "Bodas en plena huerta",
    "descripcion": "En plena huerta, con la terraza bajo los árboles y el salón con vistas a las plantaciones. Cada celebración es diferente: siempre podemos adaptarnos a lo que necesitéis.",
    "precio_persona": null,
    "minimo": null,
    "tiempos": [],
    "incluye": null,
-   "notas": null,
-   "pendiente": "Platos, precio por persona y mínimo de comensales",
+   "notas": "Cada boda lleva su presupuesto a medida: cuéntanos la fecha y cuántos seréis.",
+   "pendiente": "Mínimo de comensales",
    "visible": true,
    "orden": 2
+  },
+  {
+   "id": "boda-ceremonia",
+   "tipo": "boda",
+   "nombre": "Ceremonia civil en nuestra finca",
+   "descripcion": "Podéis casaros aquí mismo, entre los árboles.",
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [
+    {
+     "titulo": "El montaje incluye",
+     "platos": [
+      "Pérgola para los novios",
+      "Alfombra roja",
+      "Césped artificial para la zona de casamiento",
+      "Sillas blancas de palillería",
+      "Decoración floral"
+     ]
+    }
+   ],
+   "incluye": null,
+   "notas": null,
+   "pendiente": null,
+   "visible": true,
+   "orden": 3
+  },
+  {
+   "id": "boda-coctel",
+   "tipo": "boda",
+   "nombre": "Cóctel de bienvenida",
+   "descripcion": "Con 6, 8 o 10 aperitivos, de unos 30, 45 o 60 minutos, y toda la bebida incluida: aguas, cervezas, refrescos, tinto de verano y vino blanco, tinto y rosado. La bodega se elige durante la prueba de menú.",
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [
+    {
+     "titulo": "Aperitivos",
+     "platos": [
+      "Bocado de queso zamorano",
+      "Gazpacho de melón con virutas de jamón ibérico",
+      "Gazpacho de sandía",
+      "Brocheta de atún marinado",
+      "Bombón de mi-cuit y frambuesa",
+      "Gilda nitro",
+      "Tartaleta de guacamole (opción vegana)",
+      "Tartar de guacamole y chutney de mango (opción vegana)",
+      "Cremoso de queso de tetilla con crujiente de cereales (opción vegana)",
+      "Maki (opción vegana)",
+      "Saquito de verduras estilo wok (opción vegana)",
+      "Croqueta de carabineros",
+      "Croqueta de jamón ibérico",
+      "Crujiente de toro al vino tinto",
+      "Mejillón tigre",
+      "Mini canelón con salsa kimchi",
+      "Mini cachopo",
+      "Mini tortilla con cebolla caramelizada",
+      "Crujiente de cordero",
+      "Cremoso de huevo frito con jamón",
+      "Langostino en panko",
+      "Chistorra estilo kataifi",
+      "Bravas de milhojas con all i oli de horchata",
+      "Bombón de torrezno"
+     ]
+    }
+   ],
+   "incluye": null,
+   "notas": null,
+   "pendiente": null,
+   "visible": true,
+   "orden": 4
+  },
+  {
+   "id": "boda-banquete",
+   "tipo": "boda",
+   "nombre": "Banquete: platos individuales",
+   "descripcion": "Primeros, segundos, principales y postres para elegir, con nuestros arroces a leña.",
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [
+    {
+     "titulo": "Primeros",
+     "platos": [
+      "Nuestra ensaladilla con virutas de atún ahumado",
+      "Tradicional caponata siciliana de la nonna con ventresca de atún",
+      "Tartar de atún rojo con mahonesa de soja y yema de huevo de codorniz",
+      "Carpaccio de chuletón de vaca madurada con rúcula, parmesano y vinagreta de limón-kimchi"
+     ]
+    },
+    {
+     "titulo": "Segundos",
+     "platos": [
+      "Canelón crujiente de gamba con salsa thai",
+      "Tataki de atún rojo a fuego",
+      "Cazuela de gambón al ajillo",
+      "Pulpo a la brasa con parmentier de patata",
+      "Sepia bruta de playa a la parrilla"
+     ]
+    },
+    {
+     "titulo": "Principales",
+     "platos": [
+      "Arroz al senyoret",
+      "Arroz de bogavante azul",
+      "Paella valenciana tradicional",
+      "Cachopo de lomo y cecina",
+      "Rabo de vacuno al tinto"
+     ]
+    },
+    {
+     "titulo": "Postres",
+     "platos": [
+      "Trampantojo de tomate relleno de mango y vainilla",
+      "Lingote de Ferrero",
+      "Barquillos rellenos de crema pastelera"
+     ]
+    }
+   ],
+   "incluye": null,
+   "notas": null,
+   "pendiente": null,
+   "visible": true,
+   "orden": 5
+  },
+  {
+   "id": "boda-islas",
+   "tipo": "boda",
+   "nombre": "Islas temáticas",
+   "descripcion": "Puestos temáticos para completar el cóctel o la fiesta.",
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [
+    {
+     "titulo": "Para elegir",
+     "platos": [
+      "Desde Francia: champagne y ostras",
+      "De la mar (hervido o crudo): quisquilla, gamba roja, cigala de tronco y ostra",
+      "De la mar (a la brasa): zamburiñas, navaja, gamba roja y pulpo",
+      "Ibéricos y quesos valencianos: chorizo, salchichón, lomo, jamón y tres quesos valencianos",
+      "De gildas: matrimonio, cecina y queso, braseada, pulpo y cannolo relleno de tartar de atún rojo",
+      "A la parrilla: brocheta de pollo moruno, de longaniza y morcilla, y de ternera y pimiento",
+      "Mini fuets y mini choricitos con picos y regañás",
+      "Corte de jamón, con cortador",
+      "Isla cóctel: mojito, mojito de fresa, piña colada y daiquiri"
+     ]
+    }
+   ],
+   "incluye": null,
+   "notas": null,
+   "pendiente": null,
+   "visible": true,
+   "orden": 6
+  },
+  {
+   "id": "boda-fiesta",
+   "tipo": "boda",
+   "nombre": "Recena y fiesta",
+   "descripcion": null,
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [
+    {
+     "titulo": "Recena",
+     "platos": [
+      "Petit fours, cruasanes rellenos (chocolate y crema pastelera) y canelón siciliano relleno de ricota dulce",
+      "Churros con chocolate caliente",
+      "Mini hamburguesas a la brasa y pizzas elaboradas en nuestra pizzería",
+      "Carro de perritos calientes",
+      "Carro de palomitas"
+     ]
+    },
+    {
+     "titulo": "Barra libre",
+     "platos": [
+      "2 horas, con horas extra si la fiesta se alarga"
+     ]
+    },
+    {
+     "titulo": "DJ",
+     "platos": [
+      "3 horas, con horas extra si se alarga",
+      "Equipo de sonido e iluminación incluido"
+     ]
+    }
+   ],
+   "incluye": null,
+   "notas": null,
+   "pendiente": null,
+   "visible": true,
+   "orden": 7
   },
   {
    "id": "comunion",
@@ -598,9 +786,198 @@
    "tiempos": [],
    "incluye": null,
    "notas": null,
-   "pendiente": "Platos, precio por persona y mínimo de comensales",
+   "pendiente": "Mínimo de comensales",
    "visible": true,
-   "orden": 3
+   "orden": 8
+  },
+  {
+   "id": "comunion-1",
+   "tipo": "comunion",
+   "nombre": "Menú comuniones 1",
+   "descripcion": null,
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [
+    {
+     "titulo": "Entrantes a compartir",
+     "platos": [
+      "Tomate valenciano con ventresca y encurtidos",
+      "Clóchinas al vapor",
+      "Chipirones a la plancha"
+     ]
+    },
+    {
+     "titulo": "Plato individual por persona",
+     "platos": [
+      "Arroz del senyoret o paella valenciana"
+     ]
+    },
+    {
+     "titulo": "Postre",
+     "platos": [
+      "A elegir, para compartir",
+      "Pan y café"
+     ]
+    },
+    {
+     "titulo": "Opcional: cóctel de bienvenida",
+     "platos": [
+      "2 gildas matrimonio por persona",
+      "Mejillones en escabeche con papas",
+      "Montadito de ensaladilla con atún ahumado"
+     ]
+    },
+    {
+     "titulo": "Opcional: barra libre",
+     "platos": [
+      "Durante la comida: cerveza, vino D.O. Valencia y refrescos"
+     ]
+    }
+   ],
+   "incluye": null,
+   "notas": null,
+   "pendiente": null,
+   "visible": true,
+   "orden": 9
+  },
+  {
+   "id": "comunion-2",
+   "tipo": "comunion",
+   "nombre": "Menú comuniones 2",
+   "descripcion": null,
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [
+    {
+     "titulo": "Entrantes a compartir",
+     "platos": [
+      "Tomate valenciano con ventresca y encurtidos",
+      "Anchoas serie Oro (1 por persona)",
+      "Tellinas al vapor",
+      "Gambón al ajillo"
+     ]
+    },
+    {
+     "titulo": "Plato individual por persona",
+     "platos": [
+      "Arroz del senyoret o paella valenciana"
+     ]
+    },
+    {
+     "titulo": "Postre",
+     "platos": [
+      "A elegir, para compartir",
+      "Pan y café"
+     ]
+    },
+    {
+     "titulo": "Opcional: cóctel de bienvenida",
+     "platos": [
+      "2 gildas matrimonio por persona",
+      "Mejillones en escabeche con papas",
+      "Montadito de ensaladilla con atún ahumado"
+     ]
+    },
+    {
+     "titulo": "Opcional: barra libre",
+     "platos": [
+      "Durante la comida: cerveza, vino D.O. Valencia y refrescos"
+     ]
+    }
+   ],
+   "incluye": null,
+   "notas": null,
+   "pendiente": null,
+   "visible": true,
+   "orden": 10
+  },
+  {
+   "id": "comunion-3",
+   "tipo": "comunion",
+   "nombre": "Menú comuniones 3",
+   "descripcion": null,
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [
+    {
+     "titulo": "Entrantes a compartir",
+     "platos": [
+      "Jamón cebo de campo de Guijuelo",
+      "Queso curado",
+      "Navajas gallegas a la plancha (2 por persona)",
+      "Anchoas serie Oro (1 por persona)",
+      "Pulpo a la brasa con parmentier"
+     ]
+    },
+    {
+     "titulo": "Plato individual por persona",
+     "platos": [
+      "Arroz del senyoret o paella valenciana",
+      "Sorbete de limón"
+     ]
+    },
+    {
+     "titulo": "Postre",
+     "platos": [
+      "A elegir, para compartir",
+      "Pan y café"
+     ]
+    },
+    {
+     "titulo": "Opcional: cóctel de bienvenida",
+     "platos": [
+      "2 gildas matrimonio por persona",
+      "Mejillones en escabeche con papas",
+      "Montadito de ensaladilla con atún ahumado"
+     ]
+    },
+    {
+     "titulo": "Opcional: barra libre",
+     "platos": [
+      "Durante la comida: cerveza, vino D.O. Valencia y refrescos"
+     ]
+    }
+   ],
+   "incluye": null,
+   "notas": null,
+   "pendiente": null,
+   "visible": true,
+   "orden": 11
+  },
+  {
+   "id": "comunion-infantil",
+   "tipo": "comunion",
+   "nombre": "Menú comuniones infantil",
+   "descripcion": null,
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [
+    {
+     "titulo": "Entrantes a compartir",
+     "platos": [
+      "Jamón y queso",
+      "Croquetón de puchero (1 por persona)",
+      "Papas"
+     ]
+    },
+    {
+     "titulo": "Plato individual por persona",
+     "platos": [
+      "Paella de pollo y verdura"
+     ]
+    },
+    {
+     "titulo": "Postre",
+     "platos": [
+      "Helado de chocolate o vainilla"
+     ]
+    }
+   ],
+   "incluye": "Bebida incluida",
+   "notas": null,
+   "pendiente": null,
+   "visible": true,
+   "orden": 12
   },
   {
    "id": "grupos",
@@ -612,9 +989,138 @@
    "tiempos": [],
    "incluye": null,
    "notas": null,
-   "pendiente": "Platos, precio por persona y mínimo de comensales",
+   "pendiente": "Mínimo de comensales",
    "visible": true,
-   "orden": 4
+   "orden": 13
+  },
+  {
+   "id": "grupos-1",
+   "tipo": "grupo",
+   "nombre": "Menú grupos 1",
+   "descripcion": null,
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [
+    {
+     "titulo": "Entrantes a compartir",
+     "platos": [
+      "Tomate valenciano con ventresca y encurtidos",
+      "Tellinas al vapor",
+      "Bravas con allioli de horchata"
+     ]
+    },
+    {
+     "titulo": "Plato individual por persona",
+     "platos": [
+      "Arroz del senyoret o paella valenciana"
+     ]
+    },
+    {
+     "titulo": "Postre a compartir",
+     "platos": [
+      "Torrija",
+      "Pan y café"
+     ]
+    },
+    {
+     "titulo": "Opcional: barra libre",
+     "platos": [
+      "Durante la comida: cerveza, vino D.O. Valencia y refrescos"
+     ]
+    }
+   ],
+   "incluye": null,
+   "notas": null,
+   "pendiente": null,
+   "visible": true,
+   "orden": 14
+  },
+  {
+   "id": "grupos-2",
+   "tipo": "grupo",
+   "nombre": "Menú grupos 2",
+   "descripcion": null,
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [
+    {
+     "titulo": "Entrantes a compartir",
+     "platos": [
+      "Tomate valenciano con ventresca y encurtidos",
+      "Anchoa serie Oro (1 por persona)",
+      "Navajas gallegas a la plancha (1 por persona)",
+      "Sepia bruta de playa a la plancha"
+     ]
+    },
+    {
+     "titulo": "Plato individual por persona",
+     "platos": [
+      "Arroz del senyoret o paella valenciana"
+     ]
+    },
+    {
+     "titulo": "Postre a compartir",
+     "platos": [
+      "Tiramisú de horchata",
+      "Pan y café"
+     ]
+    },
+    {
+     "titulo": "Opcional: barra libre",
+     "platos": [
+      "Durante la comida: cerveza, vino D.O. Valencia y refrescos"
+     ]
+    }
+   ],
+   "incluye": null,
+   "notas": null,
+   "pendiente": null,
+   "visible": true,
+   "orden": 15
+  },
+  {
+   "id": "grupos-3",
+   "tipo": "grupo",
+   "nombre": "Menú grupos 3",
+   "descripcion": null,
+   "precio_persona": null,
+   "minimo": null,
+   "tiempos": [
+    {
+     "titulo": "Entrantes a compartir",
+     "platos": [
+      "Ensaladilla con atún ahumado",
+      "Anchoa serie Oro (1 por persona)",
+      "Croquetón de puchero (1 por persona)",
+      "Gambón al ajillo",
+      "Pulpo a la brasa con parmentier"
+     ]
+    },
+    {
+     "titulo": "Plato individual por persona",
+     "platos": [
+      "Arroz del senyoret o paella valenciana"
+     ]
+    },
+    {
+     "titulo": "Postre a compartir",
+     "platos": [
+      "Torrija o tiramisú de horchata",
+      "Pan y café"
+     ]
+    },
+    {
+     "titulo": "Opcional: barra libre",
+     "platos": [
+      "Durante la comida: cerveza, vino D.O. Valencia y refrescos"
+     ]
+    }
+   ],
+   "incluye": null,
+   "notas": null,
+   "pendiente": null,
+   "visible": true,
+   "orden": 16
   },
   {
    "id": "coctel",
@@ -626,9 +1132,9 @@
    "tiempos": [],
    "incluye": null,
    "notas": null,
-   "pendiente": "Carta de cóctel de pie: piezas, estaciones y precio",
+   "pendiente": "Cóctel de pie sin boda: piezas y estaciones",
    "visible": true,
-   "orden": 5
+   "orden": 17
   }
  ],
  "fotos": [
@@ -1036,7 +1542,7 @@
    "foco": "50% 50%",
    "orden": 28,
    "en_galeria": true,
-   "uso": "Inicio: puerta «Celebrar», «Un día» y Celebraciones"
+   "uso": "Inicio: puerta «Celebrar» y «Un día»"
   },
   {
    "id": "cartel-fachada",
@@ -1155,6 +1661,140 @@
    "foco": "50% 50%",
    "orden": 37,
    "en_galeria": false,
+   "uso": null
+  },
+  {
+   "id": "mesa-larga-vertical",
+   "src": "fotos/mesa-larga-vertical",
+   "anchos": [
+    1080,
+    640
+   ],
+   "alt": "Mesa larga montada bajo los árboles, con la huerta al fondo",
+   "categoria": "eventos",
+   "foco": "50% 50%",
+   "orden": 38,
+   "en_galeria": true,
+   "uso": "Celebraciones: cabecera"
+  },
+  {
+   "id": "cartel-cocktail",
+   "src": "fotos/cartel-cocktail",
+   "anchos": [
+    1600,
+    1080,
+    640
+   ],
+   "alt": "Cartel de madera «Cocktail» bajo los árboles, con mesas montadas y el carro de vermut al fondo",
+   "categoria": "eventos",
+   "foco": "50% 50%",
+   "orden": 39,
+   "en_galeria": true,
+   "uso": "Celebraciones: montajes"
+  },
+  {
+   "id": "carro-vermut",
+   "src": "fotos/carro-vermut",
+   "anchos": [
+    1600,
+    1080,
+    640
+   ],
+   "alt": "Carro de vermut con banderines, en la terraza bajo los árboles",
+   "categoria": "eventos",
+   "foco": "50% 50%",
+   "orden": 40,
+   "en_galeria": true,
+   "uso": "Celebraciones: montajes"
+  },
+  {
+   "id": "cartel-bailoteo",
+   "src": "fotos/cartel-bailoteo",
+   "anchos": [
+    1600,
+    1080,
+    640
+   ],
+   "alt": "Cartel de madera «Bailoteo» en un árbol, con las mesas montadas detrás",
+   "categoria": "eventos",
+   "foco": "50% 50%",
+   "orden": 41,
+   "en_galeria": true,
+   "uso": "Celebraciones: montajes"
+  },
+  {
+   "id": "banquete-mesas-sillas",
+   "src": "fotos/banquete-mesas-sillas",
+   "anchos": [
+    1600,
+    1080,
+    640
+   ],
+   "alt": "Mesas de banquete con mantel blanco y sillas de cuerda, a la sombra de los árboles",
+   "categoria": "eventos",
+   "foco": "50% 50%",
+   "orden": 42,
+   "en_galeria": true,
+   "uso": "Celebraciones: montajes"
+  },
+  {
+   "id": "mesa-numero-4",
+   "src": "fotos/mesa-numero-4",
+   "anchos": [
+    1600,
+    1080,
+    640
+   ],
+   "alt": "Detalle de una mesa de boda con número, florero y cubiertos",
+   "categoria": "eventos",
+   "foco": "50% 50%",
+   "orden": 43,
+   "en_galeria": true,
+   "uso": "Celebraciones: montajes"
+  },
+  {
+   "id": "mesa-para-dos",
+   "src": "fotos/mesa-para-dos",
+   "anchos": [
+    1600,
+    1080,
+    640
+   ],
+   "alt": "Mesa para dos con mantel blanco, servilletas oscuras y centro de flores",
+   "categoria": "eventos",
+   "foco": "50% 50%",
+   "orden": 44,
+   "en_galeria": true,
+   "uso": "Celebraciones: montajes"
+  },
+  {
+   "id": "mesa-larga-seto",
+   "src": "fotos/mesa-larga-seto",
+   "anchos": [
+    1600,
+    1080,
+    640
+   ],
+   "alt": "Mesa larga montada junto al seto, con banderines entre los árboles",
+   "categoria": "eventos",
+   "foco": "50% 50%",
+   "orden": 45,
+   "en_galeria": true,
+   "uso": null
+  },
+  {
+   "id": "mesa-numero-2",
+   "src": "fotos/mesa-numero-2",
+   "anchos": [
+    1600,
+    1080,
+    640
+   ],
+   "alt": "Mesa de boda junto al seto, con copas, número y flores",
+   "categoria": "eventos",
+   "foco": "50% 50%",
+   "orden": 46,
+   "en_galeria": true,
    "uso": null
   }
  ],

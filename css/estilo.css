@@ -303,6 +303,9 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .menu__precio small { font: 500 var(--t-0) var(--sans); color: var(--carbon-suave); }
 .menu__tiempo h4 { font: 600 var(--t-0)/1.3 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--brasa-texto); margin-bottom: var(--e2); }
 .menu__tiempo li { padding-block: var(--e1); }
+.menu__tiempo--cols ul { columns: 2; column-gap: var(--e6); }
+.menu__tiempo--cols li { break-inside: avoid; }
+@media (max-width: 860px) { .menu__tiempo--cols ul { columns: 1; } }
 
 /* hueco rotulado: lo que falta por dar */
 .hueco {
