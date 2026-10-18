@@ -66,10 +66,15 @@
 <section class="presupuesto-bloque envoltura" id="presupuesto">
   <p class="antetitulo">Pide presupuesto</p>
   <h2 class="titulo-seccion">Cuéntanos qué celebráis</h2>
-  <div class="presupuesto presupuesto--llamar">
-  <p>Llámanos y te preparamos la propuesta. Ten a mano la fecha, cuántos seréis y qué celebráis.</p>
-  <a class="boton boton--brasa" href="tel:+34619569479">Llamar al 619 56 94 79</a>
-</div>
+  <form class="presupuesto" data-presupuesto data-destino="https://wa.me/34619569479">
+  <label>¿Qué celebráis?<select name="tipo"><option>Bodas</option><option>Comuniones</option><option>Grupos y empresa</option><option>Cóctel de pie</option><option>Otro</option></select></label>
+  <label>Fecha<input type="date" name="fecha" required></label>
+  <label>Personas<input type="number" name="personas" min="1" inputmode="numeric" required></label>
+  <label>Nombre<input name="nombre" autocomplete="name" required></label>
+  <label class="ancho">Cuéntanos<textarea name="mensaje" rows="3"></textarea></label>
+  <button class="boton boton--brasa" type="submit">Pedir presupuesto</button>
+</form>
+  <p>¿Prefieres hablar? Llámanos al <a href="tel:+34619569479">619 56 94 79</a>.</p>
 </section>
 </main>
 <footer class="pie">

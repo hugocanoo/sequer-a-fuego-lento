@@ -92,10 +92,11 @@ class Web:
     def tel_href(self, numero=None):
         return "tel:+34" + (numero or self.a["telefono"]).replace(" ", "")
 
-    def wa_href(self, texto=""):
-        if not self.a.get("whatsapp"):
+    def wa_href(self, texto="", numero=None):
+        numero = numero or self.a.get("whatsapp")
+        if not numero:
             return None
-        n = "34" + self.a["whatsapp"].replace(" ", "")
+        n = "34" + numero.replace(" ", "")
         return f"https://wa.me/{n}" + (f"?text={urllib.parse.quote(texto)}" if texto else "")
 
     def precio(self, p):
@@ -536,7 +537,7 @@ class Web:
         montajes_html = "".join(
             f'<li class="espacio" data-revelar style="--i:{i}" data-tilt><figure>{self.foto(f, sizes="(min-width: 900px) 30vw, 90vw")}</figure>'
             f'<h3>{t}</h3><p>{x}</p></li>' for i, (f, t, x) in enumerate(montajes))
-        wa = self.wa_href()
+        wa = self.wa_href(numero=a.get("whatsapp_eventos"))
         destino = wa or (f'mailto:{a["email"]}' if a.get("email") else None)
         if destino:
             formulario = f"""<form class="presupuesto" data-presupuesto data-destino="{e(destino)}">
@@ -577,6 +578,7 @@ class Web:
   {self.antetitulo("Pide presupuesto")}
   <h2 class="titulo-seccion">Cuéntanos qué celebráis</h2>
   {formulario}
+  {f'<p>¿Prefieres hablar? Llámanos al <a href="{self.tel_href(a["telefono_eventos"])}">{e(a["telefono_eventos"])}</a>.</p>' if a.get("telefono_eventos") and destino else ""}
 </section>"""
         return self.pagina("celebraciones", f'Bodas, comuniones y eventos — {a["nombre"]}',
                            "Celebraciones en la huerta de Alboraia: bodas, comuniones, aniversarios, grupos y cóctel de pie, con arroces a leña y parking privado.",
